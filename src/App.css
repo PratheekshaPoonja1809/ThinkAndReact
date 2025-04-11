@@ -1,0 +1,106 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.react-qna-cntr {
+  color: rgb(56, 111, 212);
+  background-color: rgb(56, 111, 212);
+  width: 91%;
+  border: 1px solid;
+  padding: 1px 4%;
+  border-radius: 10px;
+}
+
+.react-qna-section {
+  background-color: #f6f7f9;
+  width: 91%;
+  border: 1px solid;
+  padding: 1px 4%;
+  border-radius: 10px;
+  margin: 5% 0px;
+  box-shadow: 5px 5px 15px rgb(56, 111, 212);
+}
+
+.react-qna-sub-sec {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.react-qna-sub-sec>span {
+  cursor: pointer;
+}
+
+.qna-answers {
+  margin: 5px 1% 1.5%;
+  color: #174db2;
+}
+
+.quiz-section {
+  margin: 5%;
+}
+
+.quiz-cntr {
+  display: flex;
+  flex-direction: column;
+  padding: 2% 5%;
+  border-radius: 2%;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-cntr {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+}
+
+.btn-cntr>button,
+.submit-btn {
+  margin: 1%;
+  color: white;
+  cursor: pointer;
+  background-color: rgb(151, 183, 243);
+  outline: none;
+  border: 1px solid #90b4f7;
+  border-radius: 10px;
+}
+
+.btn-cntr>button {
+  padding: 1%;
+  font-weight: 600;
+}
+
+.submit-btn {
+  padding: 10% 20%;
+}
+
+.btn-cntr>button:disabled {
+  cursor: not-allowed;
+  background-color: rgb(173, 173, 173);
+  border: 1px solid #888;
+}
+
+.quiz-cntr .btn-cntr .right-selection {
+  background-color: green;
+}
+
+.react-qna-sub-sec h3 {
+  color: #174db2;
+}
+
+.category-list{
+  display: inline-block;
+  padding: 2px 15px;
+  border: 1px solid;
+  margin: 0px 1%;
+  cursor: pointer;
+  border-radius: 15px;
+}
