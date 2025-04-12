@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Questions } from "./questions";
 import { Minus, Plus } from "react-feather";
+import { CategoryList } from "./utils/CategoryList";
 
 export function ReactQnA() {
-  const [categoryList, setCategoryList] = useState([]);
   const [displayAns, setDisplayAns] = useState([]);
+  const [questions, setQuestions] = useState(Questions);
+  const [categorySelected, setCategorySelected] =useState('All')
 
   const expandDropdown = (index) => {
     if (displayAns.includes(index)) {
@@ -15,21 +17,18 @@ export function ReactQnA() {
     }
   };
 
-  useEffect(() => {
-    const defaultVal = ['All'];
-    [...Questions].forEach((item) => {
-      defaultVal.includes(item.category) ? '' : defaultVal.push(item.category);
-    });
-    setCategoryList(defaultVal);
-  }, []);
+  useEffect(()=>{
+    setDisplayAns([])
+    let filteredData = categorySelected ==='All'? Questions:[...Questions].filter((question) => question.category === categorySelected);
+    setQuestions(filteredData)
+  },[categorySelected])
+
 
   return (
       <main className="quiz-section">
-        <section>
-          {categoryList.map((category,index)=> <pre key={index} className="category-list">{category}</pre>)}
-        </section>
-        {Questions.map((item, index) => (
-          <div className="react-qna-section">
+        <CategoryList onClick={setCategorySelected} categoryValue={setCategorySelected}/>
+        {questions?.map((item, index) => (
+          <div className="react-qna-section" key={index}>
             <section key={index} className="react-qna-sub-sec">
               <h3>{item.question}</h3>
               <span>

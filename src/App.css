@@ -104,3 +104,9 @@
   cursor: pointer;
   border-radius: 15px;
 }
+
+.highlight-category{
+  background-color: green;
+  color: white;
+  font-weight: 600;
+}

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import PropTypes from "prop-types";
 import { Questions } from "./questions";
 import { OptionList } from "./OptionList";
+import { CategoryList } from "./utils/CategoryList";
 
 export const ReactQuiz = () => {
     const [questionList, setQuestionList] = useState(Questions);
@@ -16,6 +16,7 @@ export const ReactQuiz = () => {
     return (
       <>
         <main className="quiz-cntr">
+           <CategoryList/>
           <section>
             <button className="submit-btn" onClick={submitClk}>
               {!submit ? 'Submit' : 'Restart'}
