@@ -173,7 +173,7 @@ export const Questions = [
     category: "HTML",
   },
   {
-    question: "Which method converts a JSON string into a JavaScript object?",
+    question: "Which method converts a JSON string into a JS object?",
     options: [
       "JSON.convert()",
       "JSON.parse()",

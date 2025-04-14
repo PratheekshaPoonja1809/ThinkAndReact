@@ -6,7 +6,7 @@ export const OptionList = React.memo(({ options, setScore }) => {
 
   const optionSelected = (value, index, options) => {
     setDisabledButtons((prevState) => [...prevState, index]);
-    if (options.correctAns === value) {
+    if (options.answer === value) {
       setScore((val) => val + 1);
     } else {
       setScore((val) => val);

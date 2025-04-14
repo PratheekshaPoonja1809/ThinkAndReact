@@ -17,7 +17,7 @@ export function CategoryList({ onClick }) {
   }, []);
 
   return (
-    <section className="category-container">
+    <section className="category-container full-width">
       {categoryList.map((category, index) => (
         <pre
           key={index}

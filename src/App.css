@@ -1,11 +1,16 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
+  margin: 0 5%;
   text-align: center;
 }
 
 .full-width {
   width: 100%;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .react-qna-cntr {
@@ -19,11 +24,10 @@
 
 .react-qna-section {
   background-color: #f6f7f9;
-  width: 91%;
   border: 1px solid;
   padding: 1px 4%;
   border-radius: 10px;
-  margin: 5% 0px;
+  margin: 2% 1%;
   box-shadow: 5px 5px 15px rgb(56, 111, 212);
 }
 
@@ -44,7 +48,23 @@
 }
 
 .quiz-section {
-  margin: 5%;
+  margin: 0 5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(49%, 1fr));
+  align-items: start;
+  gap: 1rem;
+}
+
+.react-quiz-btn {
+  margin: 5% 10%;
+  background-color: #174db2;
+  color: white;
+  font-weight: 600;
+  transition: all 0.1s ease-in-out;
+}
+
+.react-quiz-btn:hover {
+  transform: rotate(1.1);
 }
 
 .quiz-cntr {
@@ -96,17 +116,32 @@
   color: #174db2;
 }
 
-.category-list{
+.category-list {
   display: inline-block;
   padding: 2px 15px;
   border: 1px solid;
   margin: 0px 1%;
   cursor: pointer;
   border-radius: 15px;
+  transition: all 0.2s ease-in-out;
+  font-weight: bold;
+  font-variant: small-caps;
 }
 
-.highlight-category{
+.category-list:hover {
+  transform: scale(1.1);
+}
+
+.highlight-category {
   background-color: green;
   color: white;
   font-weight: 600;
+}
+
+.category-container {
+  margin: 10px 0px;
+}
+
+.back-btn {
+  cursor: pointer;
 }
