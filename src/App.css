@@ -7,6 +7,7 @@
   width: 100%;
 }
 
+
 .flex-center {
   display: flex;
   justify-content: center;
@@ -55,16 +56,17 @@
   gap: 1rem;
 }
 
-.react-quiz-btn {
-  margin: 5% 10%;
+button {
+  margin: 10px 10%;
   background-color: #174db2;
   color: white;
   font-weight: 600;
   transition: all 0.1s ease-in-out;
+  cursor: pointer;
 }
 
 .react-quiz-btn:hover {
-  transform: rotate(1.1);
+  transform: scale(1.1);
 }
 
 .quiz-cntr {
@@ -86,7 +88,6 @@
 .submit-btn {
   margin: 1%;
   color: white;
-  cursor: pointer;
   background-color: rgb(151, 183, 243);
   outline: none;
   border: 1px solid #90b4f7;
@@ -108,8 +109,14 @@
   border: 1px solid #888;
 }
 
-.quiz-cntr .btn-cntr .right-selection {
+.quiz-cntr .btn-cntr .right-selection,
+.carousel-content .btn-cntr .right-selection {
   background-color: green;
+}
+
+.quiz-cntr .btn-cntr .wrong-selection,
+.carousel-content .btn-cntr .wrong-selection {
+  background-color: rgb(77, 79, 77);
 }
 
 .react-qna-sub-sec h3 {
@@ -133,7 +140,7 @@
 }
 
 .highlight-category {
-  background-color: green;
+  background-color: #174db2;
   color: white;
   font-weight: 600;
 }
@@ -144,4 +151,20 @@
 
 .back-btn {
   cursor: pointer;
+}
+
+.carousel-content {
+  width: 90%;
+}
+
+.btn-containor {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-containor button {
+  margin: 3%;
+  width: 25%;
 }

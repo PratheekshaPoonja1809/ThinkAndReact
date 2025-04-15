@@ -30,10 +30,7 @@ export function ReactQnA() {
 
   return (
     <>
-      <CategoryList
-        onClick={setCategorySelected}
-        categoryValue={setCategorySelected}
-      />
+      <CategoryList onClick={setCategorySelected} />
       <main className="quiz-section">
         {questions?.map((item, index) => (
           <section className="react-qna-section" key={index}>
