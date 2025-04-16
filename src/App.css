@@ -7,10 +7,15 @@
   width: 100%;
 }
 
-
 .flex-center {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.full-flex-inline {
+  display: inline-flex;
+  justify-content: inherit;
   align-items: center;
 }
 
@@ -147,6 +152,8 @@ button {
 
 .category-container {
   margin: 10px 0px;
+  display: inline-block;
+  width: 81%;
 }
 
 .back-btn {
@@ -167,4 +174,10 @@ button {
 .btn-containor button {
   margin: 3%;
   width: 25%;
+}
+
+.react-qna-icons {
+  margin: 0px 10px;
+  cursor: pointer;
+  display: inline-block;
 }
